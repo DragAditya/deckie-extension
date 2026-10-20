@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Deckie",
+  "version": "1.0.0",
+  "description": "A tiny floating toolbar for Chrome: back, forward, reload, new tab and search, on any page.",
+  "minimum_chrome_version": "110",
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "action": { "default_title": "Deckie settings", "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png" } },
+  "permissions": ["storage", "tabs", "favicon"],
+  "background": { "service_worker": "src/background.js" },
+  "options_ui": { "page": "options/options.html", "open_in_tab": true },
+  "commands": {
+    "toggle-toolbar": { "description": "Show or hide the Deckie toolbar on this page" }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/core.js", "src/ui.js", "src/content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

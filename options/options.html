@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deckie settings</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="../icons/icon32.png" alt="" width="24" height="24"><h1>Deckie</h1><span class="muted" id="profileName"></span></div>
+  <div class="actions">
+    <span class="status" id="status" role="status"></span>
+    <button class="btn" id="revert" disabled>Revert</button>
+    <button class="btn primary" id="apply" disabled>Apply changes</button>
+  </div>
+</header>
+
+<section class="preview" aria-label="Live preview">
+  <div class="preview-bar">
+    <div class="seg" id="stateSeg" role="group" aria-label="Preview state">
+      <button data-v="live" aria-pressed="true">Live</button><button data-v="expanded" aria-pressed="false">Expanded</button>
+    </div>
+    <div class="seg" id="bgSeg" role="group" aria-label="Preview background">
+      <button data-v="dark" aria-pressed="true">Dark page</button><button data-v="light" aria-pressed="false">Light page</button>
+    </div>
+    <span class="muted small" id="stageMsg">Drag the toolbar to position it. Changes show here before you apply them.</span>
+  </div>
+  <div class="stage" id="stage" data-bg="dark"></div>
+</section>
+
+<div class="layout">
+  <nav class="tabs" id="tabs" aria-label="Settings sections"></nav>
+  <main id="panel" tabindex="-1"></main>
+</div>
+<script src="../src/core.js"></script>
+<script src="../src/ui.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
