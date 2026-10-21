@@ -1,4 +1,13 @@
-<video src="https://github.com/user-attachments/assets/e58d35b0-361a-47c2-b4ab-bfd59e15193f" autoplay loop muted playsinline width="100%"></video>
+<video
+  src="https://github.com/user-attachments/assets/40086fcd-4d73-43cc-9b10-22da26b502cf"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="auto"
+  style="width:100%; height:auto; display:block;">
+</video>
+
 
 # Deckie
 
