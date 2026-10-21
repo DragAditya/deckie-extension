@@ -1,6 +1,4 @@
-<video autoplay loop muted playsinline width="100%">
-  <source src="assets/deckie-demo.mp4" type="video/mp4">
-</video>
+<video src="https://github.com/user-attachments/assets/e58d35b0-361a-47c2-b4ab-bfd59e15193f" autoplay loop muted playsinline width="100%"></video>
 
 # Deckie
 
