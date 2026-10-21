@@ -1,3 +1,7 @@
+<video autoplay loop muted playsinline width="100%">
+  <source src="assets/deckie-demo.mp4" type="video/mp4">
+</video>
+
 # Deckie
 
 A tiny floating toolbar for Chrome. It sits on the page as a small pill, opens when you hover, click or press a shortcut, and gives you Back, Forward, Reload, New tab and a search bar without reaching for the browser's own toolbar. Almost everything about how it looks and behaves can be changed.
